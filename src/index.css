@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Fugaz+One&family=Roboto+Slab:wght@700&display=swap');
+  
+  :root {
+    font-size: 16px;
+  
+    /* Colour Variables */
+    --clr-primary: hsl(24, 100%, 46%);
+    --clr-secondary: hsl(32, 100%, 50%);
+    --clr-accent: hsl(23, 72%, 72%);
+    --clr-neutral: hsl(0, 0%, 100%);
+    --clr-contrast: hsl(0, 0%, 12%);
+  
+    /* Font faces */
+    --ff-heading: 'Fugaz One', sans-serif;
+    --ff-sub-heading: 'Roboto Slab', serif;
+    --ff-paragraph: 'Alegreya', serif;
+    --ff-link: 'Alegreya Sans', sans-serif;
+    --ff-btn: 'Roboto Slab', serif;
+  }
+  
+  /* Animations */
+  
+  
