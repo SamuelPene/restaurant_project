@@ -1,13 +1,20 @@
 import React from 'react';
 import './cta.css';
 
-function CTA({ textContent }) {
+function CTA({ textContent, setIsDashboardActive, isDashboardActive }) {
   const handleClick = () => {
-    /* CTA onClick code */
+    if (!isDashboardActive) {
+      setIsDashboardActive(true);
+    }
   };
 
   return (
-    <button className="cta__btn" onClick={handleClick()}>
+    <button
+      className="cta__btn"
+      onClick={() => {
+        handleClick();
+      }}
+    >
       {textContent}
     </button>
   );
