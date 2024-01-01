@@ -1,12 +1,16 @@
-import React from 'react'
-import "./cta.css"
+import React from 'react';
+import './cta.css';
 
-function CTA() {
-    return (
-        <div>
-            
-        </div>
-    )
+function CTA({ textContent }) {
+  const handleClick = () => {
+    /* CTA onClick code */
+  };
+
+  return (
+    <button className="cta__btn" onClick={handleClick()}>
+      {textContent}
+    </button>
+  );
 }
 
-export default CTA
+export default CTA;

@@ -1,12 +1,8 @@
-import React from 'react'
-import "./map.css"
+import React from 'react';
+import './map.css';
 
 function Map() {
-    return (
-        <div>
-            Map
-        </div>
-    )
+  return <div>Map</div>;
 }
 
-export default Map
+export default Map;

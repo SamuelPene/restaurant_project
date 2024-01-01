@@ -1,12 +1,14 @@
-import { Nav, Footer } from "./Website/Pages/index"
-import Website from "./Website/Website"
+import { Nav, Footer } from './Website/Components/index';
+import Website from './Website/Website';
+import Dashboard from './Dashboard/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      < Nav />
-      < Website />
-      < Footer />
+      <Nav />
+      {/* < Website /> */}
+      <Dashboard />
+      <Footer />
     </div>
   );
 }

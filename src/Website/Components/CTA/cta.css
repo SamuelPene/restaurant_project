@@ -1,0 +1,24 @@
+.cta__btn {
+  height: 50%;
+  width: 75%;
+  background: transparent;
+  color: var(--clr-primary);
+  border: solid 2px var(--clr-primary);
+  font-family: var(--ff-btn);
+}
+
+.cta__btn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .cta__btn {
+    max-width: 155px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .cta__btn {
+    max-width: 155px;
+  }
+}

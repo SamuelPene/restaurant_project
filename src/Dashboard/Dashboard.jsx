@@ -4,7 +4,7 @@ import "./Stylesheet/dashboard.css"
 function Dashboard() {
     return (
         <div>
-            
+            Dashboard
         </div>
     )
 }

@@ -1,0 +1,153 @@
+.nav {
+  height: 5rem;
+  background: var(--clr-contrast);
+  display: flex;
+  flex-direction: row;
+}
+
+.logo__container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.logo__title {
+  color: var(--clr-primary);
+  font-family: var(--ff-heading);
+  text-shadow: var(--txt-shadow-neutral);
+}
+
+.links__container {
+  display: none;
+}
+
+.link {
+  color: var(--clr-accent);
+  font-family: var(--ff-link);
+  font-size: 11px;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.menu__container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu__icon {
+  height: 60%;
+  width: 75%;
+  color: var(--clr-primary);
+}
+
+.menu__icon:hover {
+  cursor: pointer;
+}
+
+.cta__container {
+  display: none;
+}
+
+@media only screen and (max-width: 360px) {
+  .logo__title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .logo__container {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+  .links__container {
+    display: block;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+    padding-right: 5px;
+  }
+
+  .menu__container {
+    display: none;
+  }
+
+  .cta__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .logo__container {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+  .links__container {
+    display: block;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+    padding-right: 5px;
+  }
+
+  .menu__container {
+    display: none;
+  }
+
+  .cta__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .logo__container {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+  .links__container {
+    display: block;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+    padding-right: 5px;
+  }
+
+  .menu__container {
+    display: none;
+  }
+
+  .cta__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+  }
+}
