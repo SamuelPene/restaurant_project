@@ -9,12 +9,13 @@ import {
   SiFacebook,
   SiTwitter,
 } from 'react-icons/si';
+import { useSelector } from 'react-redux';
 
-function Footer({
-  setIsDashboardActive,
-  isDashboardActive,
-  setIsWebsiteActive,
-}) {
+function Footer() {
+  const isDashboardActive = useSelector(
+    (state) => state.isDashBoardActive.value
+  );
+
   return (
     <div className={isDashboardActive ? 'footer__dashboard-active' : 'footer'}>
       <div className="footer__logo__container">
@@ -56,12 +57,7 @@ function Footer({
           <SiDeliveroo className="partner-icon" />
         </div>
         <div className="footer__partner-icon__CTA-wrapper">
-          <CTA
-            textContent={'Order Today'}
-            setIsDashboardActive={setIsDashboardActive}
-            isDashboardActive={isDashboardActive}
-            setIsWebsiteActive={setIsWebsiteActive}
-          />
+          <CTA textContent={'Order Today'} />
         </div>
       </div>
       <div className="footer__rights__container">
