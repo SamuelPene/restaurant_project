@@ -7,9 +7,14 @@
 
 html,
 body,
-#root {
+#root,
+.App {
   height: 100%;
   width: 100%;
+}
+
+.App {
+  position: relative;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Fugaz+One&family=Roboto+Slab:wght@700&display=swap');

@@ -5,7 +5,7 @@
   flex-direction: row;
 }
 
-.logo__container {
+.nav__logo__container {
   width: 70%;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@
   text-shadow: var(--txt-shadow-neutral);
 }
 
-.links__container {
+.nav__links__container {
   display: none;
 }
 
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-.menu__container {
+.nav__menu__container {
   width: 30%;
   height: 100%;
   display: flex;
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-.cta__container {
+.nav__cta__container {
   display: none;
 }
 
@@ -63,14 +63,14 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .logo__container {
+  .nav__logo__container {
     width: 35%;
     display: flex;
     align-items: center;
     padding-left: 25px;
   }
 
-  .links__container {
+  .nav__links__container {
     display: block;
     width: 45%;
     display: flex;
@@ -80,11 +80,11 @@
     padding-right: 5px;
   }
 
-  .menu__container {
+  .nav__menu__container {
     display: none;
   }
 
-  .cta__container {
+  .nav__cta__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,14 +93,14 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .logo__container {
+  .nav__logo__container {
     width: 35%;
     display: flex;
     align-items: center;
     padding-left: 25px;
   }
 
-  .links__container {
+  .nav__links__container {
     display: block;
     width: 45%;
     display: flex;
@@ -110,11 +110,11 @@
     padding-right: 5px;
   }
 
-  .menu__container {
+  .nav__menu__container {
     display: none;
   }
 
-  .cta__container {
+  .nav__cta__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,14 +123,14 @@
 }
 
 @media only screen and (min-width: 1201px) {
-  .logo__container {
+  .nav__logo__container {
     width: 35%;
     display: flex;
     align-items: center;
     padding-left: 25px;
   }
 
-  .links__container {
+  .nav__links__container {
     display: block;
     width: 45%;
     display: flex;
@@ -140,11 +140,11 @@
     padding-right: 5px;
   }
 
-  .menu__container {
+  .nav__menu__container {
     display: none;
   }
 
-  .cta__container {
+  .nav__cta__container {
     display: flex;
     align-items: center;
     justify-content: center;

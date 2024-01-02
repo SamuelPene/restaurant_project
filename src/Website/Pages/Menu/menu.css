@@ -1,0 +1,32 @@
+.menu__container {
+  height: 100vh;
+  width: 100%;
+  background: var(--clr-contrast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1%;
+}
+
+.menu__title-wrapper h1 {
+  font-family: var(--ff-heading);
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  text-shadow: var(--txt-shadow-neutral);
+}
+
+.menu__container-inner {
+  height: 65%;
+  width: 85%;
+  max-width: 70rem;
+  border: solid 1px var(--clr-neutral);
+  display: flex;
+  flex-direction: rowS;
+}
+
+.menu__container-inner div {
+  height: 100%;
+  width: 25%;
+  border: 1px solid var(--clr-neutral);
+}

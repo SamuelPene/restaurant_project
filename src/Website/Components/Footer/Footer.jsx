@@ -10,9 +10,13 @@ import {
   SiTwitter,
 } from 'react-icons/si';
 
-function Footer({ setIsDashboardActive, isDashboardActive }) {
+function Footer({
+  setIsDashboardActive,
+  isDashboardActive,
+  setIsWebsiteActive,
+}) {
   return (
-    <div className="footer">
+    <div className={isDashboardActive ? 'footer__dashboard-active' : 'footer'}>
       <div className="footer__logo__container">
         <h3 className="footer__logo">Sam's Kitchen</h3>
       </div>
@@ -56,6 +60,7 @@ function Footer({ setIsDashboardActive, isDashboardActive }) {
             textContent={'Order Today'}
             setIsDashboardActive={setIsDashboardActive}
             isDashboardActive={isDashboardActive}
+            setIsWebsiteActive={setIsWebsiteActive}
           />
         </div>
       </div>

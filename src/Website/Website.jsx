@@ -4,13 +4,11 @@ import './Stylesheet/website.css';
 
 function Website() {
   return (
-    <main className="website-container">
-      <b>{'<-- Website Start -->'}</b>
+    <main className="website__container">
       <Landing />
       <Menu />
       <About />
       <Contact />
-      <b>{'<-- Website End -->'}</b>
     </main>
   );
 }

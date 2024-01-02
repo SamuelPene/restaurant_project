@@ -1,10 +1,16 @@
 import React from 'react';
 import './cta.css';
 
-function CTA({ textContent, setIsDashboardActive, isDashboardActive }) {
+function CTA({
+  textContent,
+  setIsDashboardActive,
+  isDashboardActive,
+  setIsWebsiteActive,
+}) {
   const handleClick = () => {
     if (!isDashboardActive) {
       setIsDashboardActive(true);
+      setIsWebsiteActive(false);
     }
   };
 
