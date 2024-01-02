@@ -3,7 +3,7 @@ import './nav.css';
 import { MdOutlineMenu } from 'react-icons/md';
 import CTA from '../CTA/CTA';
 
-function Nav({ setIsDashboardActive, isDashboardActive, setIsWebsiteActive }) {
+function Nav() {
   const handleClick = () => {
     /* handle navbar link click */
   };
@@ -28,12 +28,7 @@ function Nav({ setIsDashboardActive, isDashboardActive, setIsWebsiteActive }) {
         <MdOutlineMenu className="menu__icon" />
       </div>
       <div className="nav__cta__container">
-        <CTA
-          textContent={'Order Now'}
-          setIsDashboardActive={setIsDashboardActive}
-          isDashboardActive={isDashboardActive}
-          setIsWebsiteActive={setIsWebsiteActive}
-        />
+        <CTA textContent={'Order Now'} />
       </div>
     </div>
   );

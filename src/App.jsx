@@ -2,25 +2,20 @@ import { useState } from 'react';
 import { Nav, Footer } from './Website/Components/index';
 import Website from './Website/Website';
 import Dashboard from './Dashboard/Dashboard';
+import { useSelector } from 'react-redux';
 
 function App() {
-  const [isDashboardActive, setIsDashboardActive] = useState();
-  const [isWebsiteActive, setIsWebsiteActive] = useState(true);
+  const isWebsiteActive = useSelector((state) => state.isWebsiteActive.value);
+  const isDashboardActive = useSelector(
+    (state) => state.isDashBoardActive.value
+  );
 
   return (
     <div className="App">
-      <Nav
-        setIsDashboardActive={setIsDashboardActive}
-        isDashboardActive={isDashboardActive}
-        setIsWebsiteActive={setIsWebsiteActive}
-      />
+      <Nav />
       {isWebsiteActive && <Website />}
       {isDashboardActive && <Dashboard />}
-      <Footer
-        setIsDashboardActive={setIsDashboardActive}
-        isDashboardActive={isDashboardActive}
-        setIsWebsiteActive={setIsWebsiteActive}
-      />
+      <Footer />
     </div>
   );
 }
