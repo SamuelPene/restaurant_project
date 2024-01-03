@@ -40,6 +40,9 @@ body,
   --txt-shadow-neutral: 1px 1px 0 var(--clr-neutral),
     -1px 1px 0 var(--clr-neutral), -1px -1px 0 var(--clr-neutral),
     1px -1px 0 var(--clr-neutral);
+  --txt-shadow-contrast: 1px 1px 0 var(--clr-contrast),
+    -1px 1px 0 var(--clr-contrast), -1px -1px 0 var(--clr-contrast),
+    1px -1px 0 var(--clr-contrast);
 }
 
 /* Animations */
