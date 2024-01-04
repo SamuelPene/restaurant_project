@@ -6,6 +6,7 @@ import { GiBread } from 'react-icons/gi';
 import { FaPastafarianism } from 'react-icons/fa';
 import { RiCake3Line } from 'react-icons/ri';
 import { BiDrink } from 'react-icons/bi';
+import { BiSearch } from 'react-icons/bi';
 
 export {
   PiBowlFoodDuotone,
@@ -16,4 +17,5 @@ export {
   FaPastafarianism,
   RiCake3Line,
   BiDrink,
+  BiSearch,
 };

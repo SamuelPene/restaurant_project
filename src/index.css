@@ -28,6 +28,7 @@ body,
   --clr-accent: hsl(23, 72%, 72%);
   --clr-neutral: hsl(0, 0%, 100%);
   --clr-contrast: hsl(0, 0%, 12%);
+  --clr-grey: hsl(0, 0%, 76%);
 
   /* Font faces */
   --ff-heading: 'Fugaz One', sans-serif;

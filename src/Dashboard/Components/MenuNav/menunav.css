@@ -3,6 +3,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  border: var(--clr-grey) solid 1px;
 }
 
 .dashboard__nav__title-wrapper {

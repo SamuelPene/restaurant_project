@@ -8,14 +8,13 @@
 
 .dashboard-inner {
   box-shadow: var(--clr-accent) 3px 3px 3px;
-  border: solid 1px var(--clr-accent);
   border-radius: 3px;
-  height: 82.5%;
+  height: 95%;
   width: 90%;
-  max-width: 65rem;
+  max-width: 70rem;
   display: grid;
   grid-template-columns: 22.5% 50% 27.5%;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 25% 45% 30%;
 }
 
 .dashboard__nav__container {
@@ -25,15 +24,13 @@
 }
 
 .dashboard__search__container {
-  background: pink;
   grid-column-start: 2;
-  grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 2;
+  border-bottom: var(--clr-grey) solid 1px;
 }
 
 .dashboard__menu-item__container {
-  background: orange;
+  /* background: orange; */
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
