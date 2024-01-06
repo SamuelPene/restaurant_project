@@ -22,8 +22,8 @@
 
 .subcategory-wrapper h3 {
   font-family: var(--ff-heading);
-  color: var(--clr-accent);
-  text-shadow: var(--txt-shadow-contrast);
+  color: var(--clr-neutral-light);
+  text-shadow: var(--txt-shadow-primary);
   font-size: 0.9rem;
 }
 

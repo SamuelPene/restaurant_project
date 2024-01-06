@@ -29,6 +29,7 @@ body,
   --clr-neutral: hsl(0, 0%, 100%);
   --clr-contrast: hsl(0, 0%, 12%);
   --clr-grey: hsl(0, 0%, 76%);
+  --clr-neutral-light: hsl(282, 35%, 93%);
 
   /* Font faces */
   --ff-heading: 'Fugaz One', sans-serif;
@@ -44,6 +45,9 @@ body,
   --txt-shadow-contrast: 1px 1px 0 var(--clr-contrast),
     -1px 1px 0 var(--clr-contrast), -1px -1px 0 var(--clr-contrast),
     1px -1px 0 var(--clr-contrast);
+  --txt-shadow-primary: 1px 1px 0 var(--clr-primary),
+    -1px 1px 0 var(--clr-primary), -1px -1px 0 var(--clr-primary),
+    1px -1px 0 var(--clr-primary);
 }
 
 /* Animations */

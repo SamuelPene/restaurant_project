@@ -1,0 +1,46 @@
+.price__text__container {
+  font-family: var(--ff-paragraph);
+  font-variant: small-caps;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.price__discount-wrapper,
+.price__item-total-wrapper,
+.price__order-total-wrapper,
+.price__delivery-type-wrapper {
+  width: 95%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2.5%;
+}
+
+.price__delivery-type-wrapper {
+  justify-content: center;
+  background: var(--clr-neutral-light);
+}
+
+.price__confirm-order-btn-wrapper {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price__confirm-order-btn-wrapper button {
+  width: 95%;
+  height: 75%;
+  background: var(--clr-primary);
+  font-family: var(--ff-heading);
+  color: vaR(--clr-neutral);
+  border: none;
+}
+
+.price__confirm-order-btn-wrapper button:hover {
+  cursor: pointer;
+}

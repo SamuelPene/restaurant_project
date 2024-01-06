@@ -10,7 +10,7 @@
   box-shadow: var(--clr-accent) 3px 3px 3px;
   border-radius: 3px;
   height: 95%;
-  width: 90%;
+  width: 95%;
   max-width: 70rem;
   display: grid;
   grid-template-columns: 22.5% 50% 27.5%;
@@ -38,7 +38,9 @@
 }
 
 .dashboard__order__container {
-  background: aqua;
+  border-left: var(--clr-grey) solid 1px;
+  border-right: var(--clr-grey) solid 1px;
+  border-top: var(--clr-grey) solid 1px;
   grid-column-start: 3;
   grid-column-end: 7;
   grid-row-start: 1;
@@ -46,7 +48,7 @@
 }
 
 .dashboard__price__container {
-  background: red;
+  border: var(--clr-grey) solid 1px;
   grid-column-start: 3;
   grid-column-end: 7;
   grid-row-start: 3;
