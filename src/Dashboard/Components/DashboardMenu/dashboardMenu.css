@@ -1,0 +1,33 @@
+.c-db-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+}
+
+.c-db-menu__card {
+  border: var(--clr-grey) solid 1px;
+  border-radius: 5px;
+  width: 90%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.c-db-menu__card h3 {
+  font-family: var(--ff-heading);
+  text-shadow: var(--txt-shadow-primary);
+  color: var(--clr-neutral);
+}
+
+.c-db-menu__img-wrapper {
+  height: 70%;
+  width: 100%;
+}
+
+.c-db-menu__img {
+  height: 100%;
+  width: 100%;
+}

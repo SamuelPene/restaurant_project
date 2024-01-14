@@ -1,0 +1,43 @@
+.c-db__card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+  padding-left: 15%;
+  flex-direction: row;
+  width: 95%;
+  height: 12.25%;
+  border-bottom: solid 1px var(--clr-accent);
+  border-top: solid 1px var(--clr-accent);
+  border-left: none;
+  border-right: none;
+  background: transparent;
+}
+
+.c-db__card:hover {
+  cursor: pointer;
+  background: var(--clr-accent);
+}
+
+.c-db__icon-wrapper {
+  color: var(--clr-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-db__title {
+  width: 60%;
+}
+
+.c-db__title-wrapper h3 {
+  font-family: var(--ff-heading);
+  color: var(--clr-neutral-light);
+  text-shadow: var(--txt-shadow-primary);
+  font-size: 0.9rem;
+}
+
+.c-db__text {
+  font-variant: small-caps;
+  font-size: 0.8rem;
+}

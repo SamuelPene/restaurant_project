@@ -1,4 +1,4 @@
-.dashboard__search__container {
+.c-db__search {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,23 +6,23 @@
   display: flex;
 }
 
-.dashboard__search__container h1 {
+.c-db__search h1 {
   height: 35%;
   font-family: var(--ff-heading);
   color: var(--clr-primary);
   text-shadow: var(--txt-shadow-neutral);
 }
 
-.dashboard__search__container h5 {
+.c-db__search h5 {
   height: 25%;
   align-items: center;
   font-family: var(--ff-paragraph);
   font-variant: small-caps;
 }
 
-.dashboard__search__container h1,
-.dashboard__search__container h5,
-.dashboard__search-inner {
+.c-db__search h1,
+.c-db__search h5,
+.c-db__search-inner {
   padding-left: 30px;
   text-align: start;
   width: 100%;
@@ -30,18 +30,18 @@
   align-items: center;
 }
 
-.dashboard__search-inner {
+.c-db__search-inner {
   height: 40%;
 }
 
-.search__input {
+.c-db__input {
   height: 1.5rem;
   width: 15rem;
   padding-left: 1%;
   outline: none;
 }
 
-.search__btn-wrapper {
+.c-db__search__button-wrapper {
   height: 1.5rem;
   width: 5rem;
   background: var(--clr-primary);
@@ -50,25 +50,25 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .dashboard__search__container h1,
-  .dashboard__search__container h5,
-  .dashboard__search-inner {
+  .c-db__search h1,
+  .c-db__search h5,
+  .c-db__search-inner {
     padding-left: 30px;
   }
 
-  .dashboard__search__container h1 {
+  .c-db__search h1 {
     font-size: 1.75rem;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .dashboard__search__container h1,
-  .dashboard__search__container h5,
-  .dashboard__search-inner {
+  .c-db__search h1,
+  .c-db__search h5,
+  .c-db_search-inner {
     padding-left: 10px;
   }
 
-  .dashboard__search__container h1 {
+  .c-db__search h1 {
     font-size: 1.5rem;
   }
 }

@@ -1,24 +1,24 @@
-.dashboard__order__container {
+.c-db__order {
   flex-direction: column;
 }
 
-.order__coupon-wrapper {
+.c-db__coupon-wrapper {
   border-bottom: var(--clr-grey) solid 1px;
   height: 10%;
 }
 
-.order__coupon-wrapper a {
+.c-db__coupon-wrapper a {
   height: 100%;
 }
 
-.order__id__container {
+.c-db__order-id {
   height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.order__item-wrapper {
+.c-db__item {
   height: 70%;
   border-top: var(--clr-grey) solid 1px;
   border-bottom: var(--clr-grey) solid 1px;
@@ -28,22 +28,22 @@
   padding-top: 2.5%;
 }
 
-.order__delivery-wrapper {
+.c-db__delivery {
   height: 10%;
 }
 
-.order__delivery-wrapper,
-.order__item-wrapper,
-.order__id__container,
-.order__coupon-wrapper a,
-.order__coupon-wrapper {
+.c-db__delivery,
+.c-db__item,
+.c-db__order-id,
+.c-db__coupon-wrapper a,
+.c-db__coupon-wrapper {
   width: 100%;
 }
 
-.dashboard__order__container,
-.order__coupon-wrapper,
-.order__coupon-wrapper a,
-.order__delivery-wrapper {
+.c-db__order,
+.c-db__coupon-wrapper,
+.c-db__coupon-wrapper a,
+.c-db__delivery {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,14 +1,20 @@
 import React from 'react';
 import './Stylesheet/dashboard.css';
-import { MenuItem, MenuNav, Search, Order, Price } from './Components';
+import {
+  DashboardNav,
+  DashboardMenu,
+  Search,
+  Order,
+  Price,
+} from './Components';
 
 function Dashboard() {
   return (
-    <main className="dashboard__container">
-      <div className="dashboard-inner">
-        <MenuNav />
+    <main className="c-db">
+      <div className="c-db-inner">
+        <DashboardNav />
         <Search />
-        <MenuItem />
+        <DashboardMenu />
         <Order />
         <Price />
       </div>

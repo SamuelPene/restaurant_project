@@ -4,14 +4,14 @@ import { BiSearch } from '../../Assets/Icons/Index';
 
 function Search() {
   return (
-    <div className="dashboard__search__container">
-      <div className="dashboard__search-inner">
+    <div className="c-db__search">
+      <div className="c-db__search-inner">
         <input
           type="text"
           placeholder="Search Menu Item..."
-          className="search__input"
+          className="c-db__input"
         ></input>
-        <button className="search__btn-wrapper">
+        <button className="c-db__search__button-wrapper">
           <BiSearch />
         </button>
       </div>

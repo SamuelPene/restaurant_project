@@ -1,7 +1,7 @@
-import MenuNav from './MenuNav/MenuNav';
+import DashboardNav from './DashboardNav/DashboardNav';
 import Search from './Search/Search';
-import MenuItem from './MenuItem/MenuItem';
+import DashboardMenu from './DashboardMenu/DashboardMenu';
 import Order from './Order/Order';
 import Price from './Price/Price';
 
-export { MenuNav, Search, MenuItem, Order, Price };
+export { DashboardNav, Search, DashboardMenu, Order, Price };

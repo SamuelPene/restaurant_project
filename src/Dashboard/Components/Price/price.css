@@ -1,4 +1,4 @@
-.price__text__container {
+.c-db__price-inner {
   font-family: var(--ff-paragraph);
   font-variant: small-caps;
   height: 70%;
@@ -8,10 +8,10 @@
   flex-direction: column;
 }
 
-.price__discount-wrapper,
-.price__item-total-wrapper,
-.price__order-total-wrapper,
-.price__delivery-type-wrapper {
+.c-db__discount-wrapper,
+.c-db__item-wrapper,
+.c-db__total-wrapper,
+.c-db__delivery-wrapper {
   width: 95%;
   height: 25%;
   display: flex;
@@ -20,19 +20,19 @@
   padding-left: 2.5%;
 }
 
-.price__delivery-type-wrapper {
+.c-db__delivery-wrapper {
   justify-content: center;
   background: var(--clr-neutral-light);
 }
 
-.price__confirm-order-btn-wrapper {
+.c-db__order__button-wrapper {
   height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.price__confirm-order-btn-wrapper button {
+.c-db__order__button-wrapper button {
   width: 95%;
   height: 75%;
   background: var(--clr-primary);
@@ -41,6 +41,6 @@
   border: none;
 }
 
-.price__confirm-order-btn-wrapper button:hover {
+.c-db__order__button-wrapper button:hover {
   cursor: pointer;
 }
