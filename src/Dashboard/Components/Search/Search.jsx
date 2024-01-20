@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 function Search() {
   const activeMenu = useSelector((state) => state.activeMenu);
-  const activeMenuLength = activeMenu.activeMenu[0].data.length;
+  const activeMenuLength = activeMenu.activeMenu[0]?.data.length;
 
   return (
     <div className="c-db__search">
@@ -20,7 +20,7 @@ function Search() {
         </button>
       </div>
       <h1>Sam's Kitchen - Menu Items</h1>
-      <h5>{`Available Menu Items: ${activeMenuLength}`}</h5>
+      <h5>{`Available Menu Items: ${activeMenuLength || 0}`}</h5>
     </div>
   );
 }
