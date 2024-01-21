@@ -6,7 +6,7 @@
   border: var(--clr-grey) solid 1px;
 }
 
-.c-db-nav__title-wrapper {
+.c-nav__title-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
   height: 10%;
 }
 
-.c-db-nav__card-container {
+.c-nav__card-container {
   height: 80%;
   display: flex;
   justify-content: space-evenly;
@@ -28,7 +28,7 @@
   flex-direction: column;
 }
 
-.c-db-nav__subtitle-wrapper {
+.c-nav__subtitle-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .c-db-nav__subtitle-wrapper h3 {
+  .c-nav__subtitle-wrapper h3 {
     font-size: 1rem;
   }
 }

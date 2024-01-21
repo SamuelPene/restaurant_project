@@ -29,21 +29,18 @@ function MenuItem() {
     <div className="c-db-menu">
       {activeMenu.activeMenu &&
         activeMenu.activeMenu[0]?.data.map((e) => (
-          <div className="c-db-menu__card" key={e.id}>
-            <div className="c-db-menu__img-wrapper">
-              <img className="c-db-menu__img" src={e.image}></img>
+          <div className="c-menu__card" key={e.id}>
+            <div className="c-menu__img-wrapper">
+              <img className="c-menu__img" src={e.image}></img>
             </div>
             <h3>{e.name}</h3>
-            <span className="c-db-menu__span">
+            <span className="c-menu__span">
               <h3>{e.price}</h3>
               <IoMdAddCircle
-                className="c-db-menu__add-button"
+                className="c-menu__add-button"
                 onClick={() => handleClick(e)}
               />
             </span>
-
-            {/* <h5>{e.description}</h5> */}
-            {/* <button onClick={() => handleClick(e)}>add to menu</button> */}
           </div>
         ))}
     </div>

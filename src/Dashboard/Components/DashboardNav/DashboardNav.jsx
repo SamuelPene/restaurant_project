@@ -15,10 +15,10 @@ import {
 function DashboardNav() {
   return (
     <div className="c-db-nav">
-      <div className="c-db-nav__title-wrapper">
+      <div className="c-nav__title-wrapper">
         <h1>Dashboard</h1>
       </div>
-      <div className="c-db-nav__card-container">
+      <div className="c-nav__card-container">
         <DashboardCard
           icon={<PiBowlFoodDuotone />}
           category={'Entrees'}
@@ -40,7 +40,7 @@ function DashboardNav() {
         />
         <DashboardCard icon={<BiDrink />} category={'Drinks'} amount={4} />
       </div>
-      <div className="c-db-nav__subtitle-wrapper">
+      <div className="c-nav__subtitle-wrapper">
         <h3>Delivery Available</h3>
       </div>
     </div>

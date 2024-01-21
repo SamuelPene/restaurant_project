@@ -22,7 +22,7 @@
 
 .c-db__search h1,
 .c-db__search h5,
-.c-db__search-inner {
+.c-search-inner {
   padding-left: 30px;
   text-align: start;
   width: 100%;
@@ -30,18 +30,18 @@
   align-items: center;
 }
 
-.c-db__search-inner {
+.c-search-inner {
   height: 40%;
 }
 
-.c-db__input {
+.c-input {
   height: 1.5rem;
   width: 15rem;
   padding-left: 1%;
   outline: none;
 }
 
-.c-db__search__button-wrapper {
+.c-search__button-wrapper {
   height: 1.5rem;
   width: 5rem;
   background: var(--clr-primary);
@@ -52,7 +52,7 @@
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .c-db__search h1,
   .c-db__search h5,
-  .c-db__search-inner {
+  .c-search-inner {
     padding-left: 30px;
   }
 
@@ -64,7 +64,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .c-db__search h1,
   .c-db__search h5,
-  .c-db_search-inner {
+  .c-search-inner {
     padding-left: 10px;
   }
 

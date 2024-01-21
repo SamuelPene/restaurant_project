@@ -1,4 +1,4 @@
-.c-db__price-inner {
+.c-price-inner {
   font-family: var(--ff-paragraph);
   font-variant: small-caps;
   height: 70%;
@@ -8,10 +8,10 @@
   flex-direction: column;
 }
 
-.c-db__discount-wrapper,
-.c-db__item-wrapper,
-.c-db__total-wrapper,
-.c-db__delivery-wrapper {
+.c-discount-wrapper,
+.c-item-wrapper,
+.c-total-wrapper,
+.c-delivery-wrapper {
   width: 95%;
   height: 25%;
   display: flex;
@@ -20,19 +20,19 @@
   padding-left: 2.5%;
 }
 
-.c-db__delivery-wrapper {
+.c-delivery-wrapper {
   justify-content: center;
   background: var(--clr-neutral-light);
 }
 
-.c-db__order__button-wrapper {
+.c-order__button-wrapper {
   height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.c-db__order__button-wrapper button {
+.c-order__button-wrapper button {
   width: 95%;
   height: 75%;
   background: var(--clr-primary);
@@ -41,6 +41,6 @@
   border: none;
 }
 
-.c-db__order__button-wrapper button:hover {
+.c-order__button-wrapper button:hover {
   cursor: pointer;
 }

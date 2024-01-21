@@ -5,23 +5,23 @@
   position: relative;
 }
 
-.c-db__coupon-wrapper {
+.c-coupon-wrapper {
   border-bottom: var(--clr-grey) solid 1px;
   height: 10%;
 }
 
-.c-db__coupon-wrapper a {
+.c-coupon-wrapper a {
   height: 100%;
 }
 
-.c-db__order-id {
+.c-order-id {
   height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.c-db__order__item-wrapper {
+.c-order__item-wrapper {
   height: 70%;
   border-top: var(--clr-grey) solid 1px;
   border-bottom: var(--clr-grey) solid 1px;
@@ -34,7 +34,7 @@
   overflow: scroll;
 }
 
-.c-db__item {
+.c-item {
   border: var(--clr-grey) solid 1px;
   display: flex;
   align-items: center;
@@ -47,29 +47,29 @@
   position: relative;
 }
 
-.c-db__removal-button {
+.c-removal-button {
   position: absolute;
   right: 2.5%;
   width: 10%;
 }
 
-.c-db__delivery {
+.c-delivery {
   height: 10%;
   position: absolute;
   bottom: 0;
 }
 
-.c-db__delivery,
-.c-db__item-wrapper,
-.c-db__order-id,
-.c-db__coupon-wrapper a,
-.c-db__coupon-wrapper {
+.c-delivery,
+.c-item-wrapper,
+.c-order-id,
+.c-coupon-wrapper a,
+.c-coupon-wrapper {
   width: 100%;
 }
 
-.c-db__coupon-wrapper,
-.c-db__coupon-wrapper a,
-.c-db__delivery {
+.c-coupon-wrapper,
+.c-coupon-wrapper a,
+.c-delivery {
   display: flex;
   align-items: center;
   justify-content: center;

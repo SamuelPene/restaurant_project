@@ -59,12 +59,12 @@ function MenuNavCard({ icon, category, amount }) {
       onClick={(e) => handleClick(e.currentTarget.value)}
       value={category}
     >
-      <span className="c-db__icon-wrapper">{icon}</span>
-      <span className="c-db__title">
-        <span className="c-db__title-wrapper">
+      <span className="c-card__icon-wrapper">{icon}</span>
+      <span className="c-card__title-container">
+        <span className="c-card__title-wrapper">
           <h3>{category}</h3>
         </span>
-        <span className="c-db__text">{`${amount} items available`}</span>
+        <span className="c-card__text">{`${amount} items available`}</span>
       </span>
     </button>
   );

@@ -9,13 +9,13 @@ function Search() {
 
   return (
     <div className="c-db__search">
-      <div className="c-db__search-inner">
+      <div className="c-search-inner">
         <input
           type="text"
           placeholder="Search Menu Item..."
-          className="c-db__input"
+          className="c-input"
         ></input>
-        <button className="c-db__search__button-wrapper">
+        <button className="c-search__button-wrapper">
           <BiSearch />
         </button>
       </div>
