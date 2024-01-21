@@ -3,6 +3,7 @@ import isDashboardActiveReducer from '../Features/isDashboardActive/isDashboardA
 import isWebsiteActiveReducer from '../Features/isWebsiteActive/isWebsiteActiveSlice';
 import menuApiReducer from '../Features/MenuApi/MenuApiSlice';
 import activeMenuReducer from '../Features/ActiveMenu/ActiveMenuSlice';
+import activeOrderReducer from '../Features/ActiveOrder/ActiveOrderSlice';
 
 export default configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export default configureStore({
     isWebsiteActive: isWebsiteActiveReducer,
     menuApiData: menuApiReducer,
     activeMenu: activeMenuReducer,
+    activeOrder: activeOrderReducer,
   },
 });

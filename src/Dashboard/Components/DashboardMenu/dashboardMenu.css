@@ -31,3 +31,22 @@
   height: 100%;
   width: 100%;
 }
+
+.c-db-menu__span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5%;
+}
+
+.c-db-menu__span svg {
+  height: 100%;
+  width: 15%;
+  color: var(--clr-primary);
+}
+
+.c-db-menu__span svg:hover {
+  cursor: pointer;
+}
