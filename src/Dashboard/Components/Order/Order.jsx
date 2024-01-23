@@ -28,12 +28,15 @@ function Order() {
         {`No Items Currently Selected` &&
           activeOrder.map((item) => (
             <div className="c-item" key={item.id}>
-              <div>{item.data.name}</div>
+              <h4>{item.data.name}</h4>
+              <div className="c-item-inner">
+                <h4>${item.data.price.toFixed(2)}</h4>
+              </div>
               <button
                 className="c-removal-button"
                 onClick={() => handleClick(item)}
               >
-                X
+                x
               </button>
             </div>
           ))}
