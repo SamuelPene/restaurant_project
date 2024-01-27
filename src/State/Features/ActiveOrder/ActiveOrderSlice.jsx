@@ -9,7 +9,7 @@ export const ActiveOrderSlice = createSlice({
   name: 'activeOrder',
   initialState,
   reducers: {
-    setActiveOrder: (state, action) => {
+    addItemToActiveOrder: (state, action) => {
       const currentOrder = {
         data: action.payload,
         id: uuidv4(),
@@ -28,7 +28,7 @@ export const ActiveOrderSlice = createSlice({
   },
 });
 
-export const { setActiveOrder, removeItemFromActiveOrder } =
+export const { addItemToActiveOrder, removeItemFromActiveOrder } =
   ActiveOrderSlice.actions;
 
 export default ActiveOrderSlice.reducer;

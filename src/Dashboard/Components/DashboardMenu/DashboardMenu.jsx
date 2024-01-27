@@ -3,8 +3,9 @@ import './dashboardMenu.css';
 import { IoMdAddCircle } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMenuApiData } from '../../../State/Features/MenuApi/MenuApiSlice';
-import { setActiveOrder } from '../../../State/Features/ActiveOrder/ActiveOrderSlice';
+import { addItemToActiveOrder } from '../../../State/Features/ActiveOrder/ActiveOrderSlice';
 import { setActiveMenu } from '../../../State/Features/ActiveMenu/ActiveMenuSlice';
+import { isMenuItemModalActive } from '../../../State/Features/isMenuItemModalActive/isMenuItemModalActiveSlice';
 import { useEffect } from 'react';
 
 function MenuItem() {
@@ -14,7 +15,8 @@ function MenuItem() {
   const activeOrder = useSelector((state) => state.activeOrder);
 
   const handleClick = (e) => {
-    dispatch(setActiveOrder(e));
+    // dispatch(addItemToActiveOrder(e));
+    dispatch(isMenuItemModalActive());
   };
 
   useEffect(() => {
