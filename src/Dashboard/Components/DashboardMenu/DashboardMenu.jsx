@@ -38,7 +38,7 @@ function MenuItem() {
             </div>
             <h3>{e.name}</h3>
             <span className="c-menu__span">
-              <h3>{e.price}</h3>
+              <h3>${e.price.toFixed(2)}</h3>
               <IoMdAddCircle
                 className="c-menu__add-button"
                 onClick={() => handleClick(e)}

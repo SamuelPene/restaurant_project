@@ -14,16 +14,45 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  position: relative;
 }
 
 .c-menu__card h3 {
   font-family: var(--ff-heading);
-  text-shadow: var(--txt-shadow-primary);
-  color: var(--clr-neutral);
+  text-shadow: var(--txt-shadow-neutral);
+  color: var(--clr-primary);
+  position: absolute;
+  bottom: 15%;
+  z-index: 1;
+  font-size: 0.9rem;
+}
+
+.c-menu__card span {
+  height: 15%;
+}
+
+.c-menu__card span,
+.c-menu__card span h3 {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  z-index: 1;
+  font-size: 0.9rem;
+}
+
+.c-menu__card span h3 {
+  bottom: 12.5%;
+  left: 45%;
+}
+
+.c-menu__card span svg {
+  position: absolute;
+  left: 75%;
+  bottom: 5%;
 }
 
 .c-menu__img-wrapper {
-  height: 70%;
+  height: 100%;
   width: 100%;
 }
 
@@ -44,7 +73,7 @@
 .c-menu__span svg {
   height: 100%;
   width: 15%;
-  color: var(--clr-primary);
+  color: var(--clr-neutral);
 }
 
 .c-menu__span svg:hover {
