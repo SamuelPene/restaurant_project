@@ -17,13 +17,15 @@ function MenuItemModal() {
     dispatch(isMenuItemModalActive());
   };
 
+  const handleClose = () => {
+    dispatch(clearItemPassedToModal());
+    dispatch(isMenuItemModalActive());
+  };
+
   return (
     <div className="c-item-modal">
       <div className="c-modal__grid">
-        <button
-          className="c-modal__button"
-          onClick={() => dispatch(isMenuItemModalActive())}
-        >
+        <button className="c-modal__button" onClick={() => handleClose()}>
           x
         </button>
         <button onClick={() => handleClick(itemPassed.itemPassedToModal)}>
