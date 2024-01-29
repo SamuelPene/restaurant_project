@@ -6,6 +6,7 @@ import activeMenuReducer from '../Features/ActiveMenu/ActiveMenuSlice';
 import activeOrderReducer from '../Features/ActiveOrder/ActiveOrderSlice';
 import orderPriceReducer from '../Features/OrderPrice/OrderPriceSlice';
 import isMenuItemModalActiveReducer from '../Features/isMenuItemModalActive/isMenuItemModalActiveSlice';
+import ItemPassedToModalReducer from '../Features/ItemPassedToModal/ItemPassedToModalSlice';
 
 export default configureStore({
   reducer: {
@@ -16,5 +17,6 @@ export default configureStore({
     activeOrder: activeOrderReducer,
     orderPrice: orderPriceReducer,
     isMenuItemModalActive: isMenuItemModalActiveReducer,
+    itemPassedToModal: ItemPassedToModalReducer,
   },
 });
