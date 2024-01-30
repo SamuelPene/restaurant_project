@@ -16,6 +16,7 @@ function MenuItemModal() {
   const quantity = quantityValue.value;
   const itemPassed = useSelector((state) => state.itemPassedToModal);
   const item = itemPassed.itemPassedToModal[0];
+  const priceToAddToOrder = item.price * quantity;
   const dispatch = useDispatch();
 
   const handleClick = (e) => {
@@ -60,6 +61,14 @@ function MenuItemModal() {
           <h3>{item.rating} ★</h3>
         </div>
         <div className="item__description">{item.description}</div>
+        <div className="item__total">
+          <h3 id="item__total__text">
+            {item.name} x {quantity}
+          </h3>
+          <h3 id="item__total__price__text">
+            Price Total: ${priceToAddToOrder.toFixed(2)}
+          </h3>
+        </div>
         <div className="item__quantity">
           <IoMdAddCircle onClick={() => handleAdd()} /> {quantity}
           <IoMdRemoveCircleOutline onClick={() => handleRemove()} />
