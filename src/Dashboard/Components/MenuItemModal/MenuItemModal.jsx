@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { isMenuItemModalActive } from '../../../State/Features/isMenuItemModalActive/isMenuItemModalActiveSlice';
 import { addItemToActiveOrder } from '../../../State/Features/ActiveOrder/ActiveOrderSlice';
 import { clearItemPassedToModal } from '../../../State/Features/ItemPassedToModal/ItemPassedToModalSlice';
+import { sumOrderPrice } from '../../../State/Features/OrderPrice/OrderPriceSlice';
 import {
   addOneToItemQuantity,
   removeOneFromItemQuantity,
@@ -20,7 +21,8 @@ function MenuItemModal() {
   const dispatch = useDispatch();
 
   const handleClick = (e) => {
-    dispatch(addItemToActiveOrder(e));
+    dispatch(addItemToActiveOrder([e, quantity]));
+    dispatch(sumOrderPrice(priceToAddToOrder));
     dispatch(resetItemQuantityToDefault());
     dispatch(clearItemPassedToModal());
     dispatch(isMenuItemModalActive());
@@ -32,13 +34,13 @@ function MenuItemModal() {
     dispatch(isMenuItemModalActive());
   };
 
-  const handleAdd = () => {
+  const handleIncrement = () => {
     if (quantity < 100) {
       dispatch(addOneToItemQuantity());
     }
   };
 
-  const handleRemove = () => {
+  const handleDecrement = () => {
     if (quantity > 1) {
       dispatch(removeOneFromItemQuantity());
     }
@@ -70,8 +72,9 @@ function MenuItemModal() {
           </h3>
         </div>
         <div className="item__quantity">
-          <IoMdAddCircle onClick={() => handleAdd()} /> {quantity}
-          <IoMdRemoveCircleOutline onClick={() => handleRemove()} />
+          <IoMdRemoveCircleOutline onClick={() => handleDecrement()} />
+          {quantity}
+          <IoMdAddCircle onClick={() => handleIncrement()} />
         </div>
         <button
           className="item__button"

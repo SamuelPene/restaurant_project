@@ -11,7 +11,7 @@ export const ActiveOrderSlice = createSlice({
   reducers: {
     addItemToActiveOrder: (state, action) => {
       const currentOrder = {
-        data: action.payload,
+        data: [action.payload[0], action.payload[1]],
         id: uuidv4(),
       };
       state.activeOrder.push(currentOrder);

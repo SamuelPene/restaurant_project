@@ -1,17 +1,16 @@
 import React from 'react';
 import './price.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { sumOrder } from '../../../State/Features/OrderPrice/OrderPriceSlice';
+import { sumOrderPrice } from '../../../State/Features/OrderPrice/OrderPriceSlice';
 
 function Price() {
   const orderState = useSelector((state) => state.activeOrder);
   const price = useSelector((state) => state.orderPrice);
-  const activeOrder = orderState.activeOrder;
-  const orderPrice = price.orderPrice.toFixed(2);
+  const orderPrice = price.orderPrice;
   const dispatch = useDispatch();
 
-  const handleClick = (e) => {
-    dispatch(sumOrder(e));
+  const handleClick = () => {
+    console.log(orderPrice);
   };
 
   return (
@@ -21,7 +20,7 @@ function Price() {
           <h5>No Discount Active</h5>
         </div>
         <div className="c-item-wrapper">
-          <h5>Item Total: {orderPrice}</h5>
+          <h5>Item(s) Total: ${Number(orderPrice + 0).toFixed(2)}</h5>
         </div>
         <div className="c-total-wrapper">
           <h5>Order Total:</h5>
@@ -31,7 +30,7 @@ function Price() {
         </div>
       </div>
       <div className="c-order__button-wrapper">
-        <button onClick={() => handleClick(activeOrder)}>Confirm Order</button>
+        <button onClick={() => handleClick()}>Confirm Order</button>
       </div>
     </div>
   );

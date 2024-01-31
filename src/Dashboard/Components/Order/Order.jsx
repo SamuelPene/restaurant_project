@@ -1,6 +1,7 @@
 import React from 'react';
 import './order.css';
 import { useSelector, useDispatch } from 'react-redux';
+import { deductRemovedItemPrice } from '../../../State/Features/OrderPrice/OrderPriceSlice';
 import {
   setActiveOrderSlice,
   removeItemFromActiveOrder,
@@ -13,6 +14,7 @@ function Order() {
 
   const handleClick = (e) => {
     dispatch(removeItemFromActiveOrder(e));
+    dispatch(deductRemovedItemPrice(e.data[0][0].price * e.data[1]));
   };
 
   return (
@@ -28,9 +30,12 @@ function Order() {
         {`No Items Currently Selected` &&
           activeOrder.map((item) => (
             <div className="c-item" key={item.id}>
-              <h4>{item.data[0].name}</h4>
+              <h4>{item.data[0][0].name}</h4>
+              <h4> (x {item.data[1]})</h4>
               <div className="c-item-inner">
-                <h4>${item.data[0].price.toFixed(2)}</h4>
+                <h4>
+                  ${Number(item.data[0][0].price * item.data[1]).toFixed(2)}
+                </h4>
               </div>
               <button
                 className="c-removal-button"
