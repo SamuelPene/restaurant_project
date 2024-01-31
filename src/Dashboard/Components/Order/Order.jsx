@@ -27,7 +27,9 @@ function Order() {
         <h3>Order ID:</h3>
       </div>
       <div className="c-order__item-wrapper">
-        {`No Items Currently Selected` &&
+        {activeOrder.length <= 0 ? (
+          <h4>No Items Currently Selected</h4>
+        ) : (
           activeOrder.map((item) => (
             <div className="c-item" key={item.id}>
               <h4>{item.data[0][0].name}</h4>
@@ -44,7 +46,8 @@ function Order() {
                 x
               </button>
             </div>
-          ))}
+          ))
+        )}
       </div>
       <div className="c-delivery">Pickup / Delivery</div>
     </div>
