@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 
 function Mode() {
   const dispatch = useDispatch();
+
   const handleClickPickup = () => {
     dispatch(displayDeliveryOptionScreen());
   };

@@ -3,6 +3,21 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   place-items: center;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.c-db-menu::-webkit-scrollbar {
+  width: 7.5px;
+  border-radius: 50%;
+}
+
+.c-db-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.c-db-menu::-webkit-scrollbar-thumb {
+  background: var(--clr-primary);
 }
 
 .c-menu__card {
