@@ -1,0 +1,19 @@
+.c-mode {
+  height: 100%;
+  width: 100%;
+  border: green solid 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.pickup__button,
+.delivery__button {
+  height: 7.5%;
+  width: 20%;
+  border: 2px solid var(--clr-primary);
+  color: var(--clr-primary);
+  font-family: var(--ff-heading);
+  background: transparent;
+}

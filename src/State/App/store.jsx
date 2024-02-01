@@ -8,6 +8,7 @@ import orderPriceReducer from '../Features/OrderPrice/OrderPriceSlice';
 import isMenuItemModalActiveReducer from '../Features/isMenuItemModalActive/isMenuItemModalActiveSlice';
 import ItemPassedToModalReducer from '../Features/ItemPassedToModal/ItemPassedToModalSlice';
 import ItemQuantityReducer from '../Features/ItemQuantity/ItemQuantitySlice';
+import DeliveryOptionReducer from '../Features/DeliveryOption/DeliveryOptionSlice';
 
 export default configureStore({
   reducer: {
@@ -20,5 +21,6 @@ export default configureStore({
     isMenuItemModalActive: isMenuItemModalActiveReducer,
     itemPassedToModal: ItemPassedToModalReducer,
     itemQuantity: ItemQuantityReducer,
+    deliveryOption: DeliveryOptionReducer,
   },
 });

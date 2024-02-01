@@ -7,23 +7,32 @@ import {
   Order,
   Price,
   MenuItemModal,
+  DeliveryOptionScreen,
 } from './Components';
 import { useSelector } from 'react-redux';
 
 function Dashboard() {
   const isActive = useSelector((state) => state.isMenuItemModalActive);
+  const displayDeliveryModeScreen = useSelector(
+    (state) => state.deliveryOption.value
+  );
 
   return (
-    <main className="c-db">
-      <div className="c-db-inner">
-        <DashboardNav />
-        <Search />
-        <DashboardMenu />
-        <Order />
-        <Price />
-        {isActive.active && <MenuItemModal />}
-      </div>
-    </main>
+    <>
+      {displayDeliveryModeScreen && <DeliveryOptionScreen />}
+      {displayDeliveryModeScreen || (
+        <main className="c-db">
+          <div className="c-db-inner">
+            <DashboardNav />
+            <Search />
+            <DashboardMenu />
+            <Order />
+            <Price />
+            {isActive.active && <MenuItemModal />}
+          </div>
+        </main>
+      )}
+    </>
   );
 }
 

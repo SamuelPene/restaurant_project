@@ -51,3 +51,8 @@ body,
 }
 
 /* Animations */
+
+/* Custom */
+.button {
+  cursor: pointer;
+}
