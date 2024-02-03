@@ -53,7 +53,7 @@ function MenuItemModal() {
           x
         </button>
         <div className="modal__image">
-          <img src={item.image}></img>
+          <img src={item.image} alt="A food item from the menu"></img>
         </div>
         <div className="item__title">
           <h3 id="title__name">{item.name}</h3>

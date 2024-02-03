@@ -1,45 +1,21 @@
 import React from 'react';
-import './dashboardnav.css';
+import { useSelector } from 'react-redux';
 import DashboardCard from '../DashboardCard/DashboardCard';
-import {
-  PiBowlFoodDuotone,
-  PiHamburger,
-  PiPizzaThin,
-  GiSteak,
-  GiBread,
-  FaPastafarianism,
-  RiCake3Line,
-  BiDrink,
-} from '../../Assets/Icons/Index';
+import './dashboardnav.css';
 
 function DashboardNav() {
+  const dashBoardData = useSelector((state) => state.menuNavCategories);
+
   return (
     <div className="c-db-nav">
       <div className="c-nav__title-wrapper">
         <h1>Dashboard</h1>
       </div>
-      <div className="c-nav__card-container">
-        <DashboardCard
-          icon={<PiBowlFoodDuotone />}
-          category={'Entrees'}
-          amount={3}
-        />
-        <DashboardCard icon={<PiHamburger />} category={'Burgers'} amount={4} />
-        <DashboardCard icon={<PiPizzaThin />} category={'Pizza'} amount={4} />
-        <DashboardCard icon={<GiSteak />} category={'Steak'} amount={4} />
-        <DashboardCard
-          icon={<FaPastafarianism />}
-          category={'Pasta'}
-          amount={5}
-        />
-        <DashboardCard icon={<GiBread />} category={'Sides'} amount={4} />
-        <DashboardCard
-          icon={<RiCake3Line />}
-          category={'Desserts'}
-          amount={4}
-        />
-        <DashboardCard icon={<BiDrink />} category={'Drinks'} amount={4} />
-      </div>
+      <nav className="c-nav__card-container">
+        {dashBoardData.value.map((e) => (
+          <DashboardCard category={e.name} amount={e.length} icon={e.icon} />
+        ))}
+      </nav>
       <div className="c-nav__subtitle-wrapper">
         <h3>Delivery Available</h3>
       </div>

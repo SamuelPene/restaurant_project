@@ -8,7 +8,7 @@ import {
 
 function MenuNavCard({ icon, category, amount }) {
   const dispatch = useDispatch();
-  const menuApiData = useSelector((state) => state.menuApiData);
+  const menuApiData = useSelector((state) => state.menuApiData.data);
   const activeMenu = useSelector((state) => state.activeMenu);
 
   const handleClick = (cat) => {
@@ -17,35 +17,35 @@ function MenuNavCard({ icon, category, amount }) {
     switch (category) {
       case 'entrees':
         dispatch(clearActiveMenu());
-        dispatch(setActiveMenu(menuApiData.data.menu.entrees));
+        dispatch(setActiveMenu(menuApiData.menu.entrees));
         break;
       case 'burgers':
         dispatch(clearActiveMenu());
-        dispatch(setActiveMenu(menuApiData.data.menu.burgers));
+        dispatch(setActiveMenu(menuApiData.menu.burgers));
         break;
       case 'pizza':
         dispatch(clearActiveMenu());
-        dispatch(setActiveMenu(menuApiData.data.menu.pizza));
+        dispatch(setActiveMenu(menuApiData.menu.pizza));
         break;
       case 'steak':
         dispatch(clearActiveMenu());
-        dispatch(setActiveMenu(menuApiData.data.menu.steak));
+        dispatch(setActiveMenu(menuApiData.menu.steak));
         break;
       case 'pasta':
         dispatch(clearActiveMenu());
-        dispatch(setActiveMenu(menuApiData.data.menu.pasta));
+        dispatch(setActiveMenu(menuApiData.menu.pasta));
         break;
       case 'sides':
         dispatch(clearActiveMenu());
-        dispatch(setActiveMenu(menuApiData.data.menu.sides));
+        dispatch(setActiveMenu(menuApiData.menu.sides));
         break;
       case 'desserts':
         dispatch(clearActiveMenu());
-        dispatch(setActiveMenu(menuApiData.data.menu.desserts));
+        dispatch(setActiveMenu(menuApiData.menu.desserts));
         break;
       case 'drinks':
         dispatch(clearActiveMenu());
-        dispatch(setActiveMenu(menuApiData.data.menu.drinks));
+        dispatch(setActiveMenu(menuApiData.menu.drinks));
         break;
       default:
         console.log('no match', activeMenu);
@@ -59,13 +59,9 @@ function MenuNavCard({ icon, category, amount }) {
       onClick={(e) => handleClick(e.currentTarget.value)}
       value={category}
     >
-      <span className="c-card__icon-wrapper">{icon}</span>
-      <span className="c-card__title-container">
-        <span className="c-card__title-wrapper">
-          <h3>{category}</h3>
-        </span>
-        <span className="c-card__text">{`${amount} items available`}</span>
-      </span>
+      <span className="c-card__icon">{icon}</span>
+      <span className="c-card__title">{category}</span>
+      <span className="c-card__text">{`${amount} items available`}</span>
     </button>
   );
 }

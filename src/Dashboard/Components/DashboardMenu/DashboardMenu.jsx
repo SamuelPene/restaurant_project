@@ -31,7 +31,11 @@ function MenuItem() {
         activeMenu.activeMenu[0]?.data.map((e) => (
           <div className="c-menu__card" key={e.id}>
             <div className="c-menu__img-wrapper">
-              <img className="c-menu__img" src={e.image}></img>
+              <img
+                className="c-menu__img"
+                alt="A food item from the menu"
+                src={e.image}
+              ></img>
             </div>
             <h3>{e.name}</h3>
             <span className="c-menu__span">
