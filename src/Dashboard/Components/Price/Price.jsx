@@ -1,13 +1,11 @@
 import React from 'react';
 import './price.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { sumOrderPrice } from '../../../State/Features/OrderPrice/OrderPriceSlice';
+import { useSelector } from 'react-redux';
 
 function Price() {
-  const orderState = useSelector((state) => state.activeOrder);
   const price = useSelector((state) => state.orderPrice);
+  const deliveryFee = useSelector((state) => state.isDeliveryActive);
   const orderPrice = price.orderPrice;
-  const dispatch = useDispatch();
 
   const handleClick = () => {
     console.log(orderPrice);
@@ -20,13 +18,25 @@ function Price() {
           <h5>No Discount Active</h5>
         </div>
         <div className="c-item-wrapper">
-          <h5>Item(s) Total: ${Number(orderPrice + 0).toFixed(2)}</h5>
+          <h5>
+            {deliveryFee.value === true
+              ? `Item(s) Total: $${Number(orderPrice + 0).toFixed(
+                  2
+                )} (+$4.99 Delivery Fee)`
+              : `Item(s) Total: $${Number(orderPrice + 0).toFixed(2)}`}
+          </h5>
         </div>
         <div className="c-total-wrapper">
-          <h5>Order Total:</h5>
+          <h5>
+            {deliveryFee.value === true
+              ? `Order Total: $${Number(orderPrice + 4.99).toFixed(2)}`
+              : `Order Total: $${orderPrice.toFixed(2)}`}
+          </h5>
         </div>
         <div className="c-delivery-wrapper">
-          <h5>Select A Delivery Type</h5>
+          <h5>
+            {deliveryFee.value === true ? 'Delivery' : 'Pick-Up In Store'}
+          </h5>
         </div>
       </div>
       <div className="c-order__button-wrapper">

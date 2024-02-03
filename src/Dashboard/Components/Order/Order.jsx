@@ -2,10 +2,7 @@ import React from 'react';
 import './order.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { deductRemovedItemPrice } from '../../../State/Features/OrderPrice/OrderPriceSlice';
-import {
-  setActiveOrderSlice,
-  removeItemFromActiveOrder,
-} from '../../../State/Features/ActiveOrder/ActiveOrderSlice';
+import { removeItemFromActiveOrder } from '../../../State/Features/ActiveOrder/ActiveOrderSlice';
 
 function Order() {
   const dispatch = useDispatch();
@@ -32,8 +29,8 @@ function Order() {
         ) : (
           activeOrder.map((item) => (
             <div className="c-item" key={item.id}>
-              <h4>{item.data[0][0].name}</h4>
-              <h4> (x {item.data[1]})</h4>
+              <h4>{item.data[0][0].name} -</h4>
+              <h4>(x{item.data[1]})</h4>
               <div className="c-item-inner">
                 <h4>
                   ${Number(item.data[0][0].price * item.data[1]).toFixed(2)}
@@ -49,7 +46,7 @@ function Order() {
           ))
         )}
       </div>
-      <div className="c-delivery">Pickup / Delivery</div>
+      <div className="delivery__change__option">Pickup / Delivery</div>
     </div>
   );
 }

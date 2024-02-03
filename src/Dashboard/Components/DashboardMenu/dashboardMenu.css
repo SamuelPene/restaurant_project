@@ -38,6 +38,8 @@
   color: var(--clr-primary);
   position: absolute;
   bottom: 15%;
+  left: 0%;
+  padding-left: 5%;
   z-index: 1;
   font-size: 0.9rem;
 }
@@ -50,14 +52,14 @@
 .c-menu__card span h3 {
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: 0;
   z-index: 1;
   font-size: 0.9rem;
 }
 
 .c-menu__card span h3 {
   bottom: 12.5%;
-  left: 45%;
+  padding-left: 5%;
 }
 
 .c-menu__card span svg {
