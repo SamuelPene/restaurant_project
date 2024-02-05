@@ -23,7 +23,13 @@ function Order() {
         <h3>My Order</h3>
         <h3>Order ID:</h3>
       </div>
-      <div className="c-order__item-wrapper">
+      <div
+        className={
+          activeOrder.length > 5
+            ? 'c-order__item-wrapper scroll'
+            : 'c-order__item-wrapper'
+        }
+      >
         {activeOrder.length <= 0 ? (
           <h4>No Items Currently Selected</h4>
         ) : (

@@ -5,6 +5,7 @@ import Order from './Order/Order';
 import Price from './Price/Price';
 import MenuItemModal from './MenuItemModal/MenuItemModal';
 import DeliveryOptionScreen from './DeliveryOptionScreen/DeliveryOptionScreen';
+import ConfirmationModal from './ConfirmationModal/ConfirmationModal';
 
 export {
   DashboardNav,
@@ -14,4 +15,5 @@ export {
   Price,
   MenuItemModal,
   DeliveryOptionScreen,
+  ConfirmationModal,
 };

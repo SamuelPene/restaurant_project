@@ -11,6 +11,7 @@ import ItemQuantityReducer from '../Features/ItemQuantity/ItemQuantitySlice';
 import DeliveryOptionReducer from '../Features/DeliveryOption/DeliveryOptionSlice';
 import MenuNavCategoriesReducer from '../Features/MenuNavCategories/MenuNavCategoriesSlice';
 import isDeliveryActiveReducer from '../Features/isDeliveryActive/isDeliveryActiveSlice';
+import isConfirmationModalActiveReducer from '../Features/isConfirmationModalActive/isConfirmationModalActiveSlice';
 
 export default configureStore({
   reducer: {
@@ -26,5 +27,6 @@ export default configureStore({
     deliveryOption: DeliveryOptionReducer,
     menuNavCategories: MenuNavCategoriesReducer,
     isDeliveryActive: isDeliveryActiveReducer,
+    isConfirmationModalActive: isConfirmationModalActiveReducer,
   },
 });

@@ -1,14 +1,16 @@
 import React from 'react';
 import './price.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { setConfirmationModalActive } from '../../../State/Features/isConfirmationModalActive/isConfirmationModalActiveSlice';
 
 function Price() {
+  const dispatch = useDispatch();
   const price = useSelector((state) => state.orderPrice);
   const deliveryFee = useSelector((state) => state.isDeliveryActive);
   const orderPrice = price.orderPrice;
 
   const handleClick = () => {
-    console.log(orderPrice);
+    dispatch(setConfirmationModalActive());
   };
 
   return (

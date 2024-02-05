@@ -8,11 +8,15 @@ import {
   Price,
   MenuItemModal,
   DeliveryOptionScreen,
+  ConfirmationModal,
 } from './Components';
 import { useSelector } from 'react-redux';
 
 function Dashboard() {
   const isActive = useSelector((state) => state.isMenuItemModalActive);
+  const isConfirmationModalActive = useSelector(
+    (state) => state.isConfirmationModalActive.active
+  );
   const displayDeliveryModeScreen = useSelector(
     (state) => state.deliveryOption.value
   );
@@ -29,6 +33,7 @@ function Dashboard() {
             <Order />
             <Price />
             {isActive.active && <MenuItemModal />}
+            {isConfirmationModalActive && <ConfirmationModal />}
           </div>
         </main>
       )}
