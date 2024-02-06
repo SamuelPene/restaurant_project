@@ -1,0 +1,38 @@
+#c-delivery__form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#c-delivery__form h3 {
+  color: var(--clr-primary);
+  font-family: var(--ff-sub-heading);
+  font-variant: small-caps;
+}
+
+#address__search {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+}
+
+#autocomplete {
+  width: 65%;
+  height: 40%;
+  padding-left: 5px;
+  outline: none;
+}
+
+#submit__address {
+  background: transparent;
+  border: solid 1px var(--clr-primary);
+  color: var(--clr-primary);
+  height: 40%;
+  width: 25%;
+}

@@ -12,6 +12,7 @@ import DeliveryOptionReducer from '../Features/DeliveryOption/DeliveryOptionSlic
 import MenuNavCategoriesReducer from '../Features/MenuNavCategories/MenuNavCategoriesSlice';
 import isDeliveryActiveReducer from '../Features/isDeliveryActive/isDeliveryActiveSlice';
 import isConfirmationModalActiveReducer from '../Features/isConfirmationModalActive/isConfirmationModalActiveSlice';
+import AddressReducer from '../Features/Address/AddressSlice';
 
 export default configureStore({
   reducer: {
@@ -28,5 +29,6 @@ export default configureStore({
     menuNavCategories: MenuNavCategoriesReducer,
     isDeliveryActive: isDeliveryActiveReducer,
     isConfirmationModalActive: isConfirmationModalActiveReducer,
+    address: AddressReducer,
   },
 });

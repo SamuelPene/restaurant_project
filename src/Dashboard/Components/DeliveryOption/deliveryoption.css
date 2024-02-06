@@ -1,0 +1,27 @@
+.heading__wrapper {
+  margin-top: 2.5%;
+}
+
+.delivery__text {
+  margin: 15px;
+  color: var(--clr-primary);
+}
+
+.delivery__button__container {
+  height: 35%;
+  width: 60%;
+  gap: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pickup__button,
+.delivery__button {
+  height: 50%;
+  width: 100%;
+  border: 2px solid var(--clr-primary);
+  color: var(--clr-primary);
+  font-family: var(--ff-heading);
+  background: transparent;
+}
